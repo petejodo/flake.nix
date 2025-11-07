@@ -17,7 +17,7 @@
       };
     in {
       nixosConfigurations = {
-        nixos = mkHost "nixos";
+        beelink-dark = mkHost "beelink-dark";
       };
     };
 }

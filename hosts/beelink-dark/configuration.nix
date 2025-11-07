@@ -6,5 +6,5 @@
   ];
 
   # Host-specific configuration
-  networking.hostName = "nixos";
+  networking.hostName = "beelink-dark";
 }
