@@ -5,14 +5,19 @@
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
   };
 
-  outputs = { self, nixpkgs }: {
-    nixosConfigurations = {
-      nixos = nixpkgs.lib.nixosSystem {
+  outputs = { self, nixpkgs }:
+    let
+      mkHost = hostname: nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
         modules = [
-          ./configuration.nix
+          ./system.nix
+          ./home.nix
+          ./hosts/${hostname}/configuration.nix
         ];
       };
+    in {
+      nixosConfigurations = {
+        nixos = mkHost "nixos";
+      };
     };
-  };
 }
