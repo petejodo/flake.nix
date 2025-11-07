@@ -56,6 +56,7 @@
   environment.systemPackages = with pkgs; [
     git
     claude-code
+    helix
   ];
 
   # System version
