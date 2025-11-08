@@ -21,7 +21,7 @@
     };
   };
 
-  outputs = { self, nixpkgs, home-manager, ... } @ inputs:
+  outputs = { self, nixpkgs, home-manager, nix-index-database, ... } @ inputs:
     let
       stateVersion = "25.05";
       username = "peter";
@@ -36,14 +36,17 @@
           ./system.nix
           ./hosts/${hostname}/configuration.nix
 
-          # Import home-manager NixOS module
+          # All inputs that provide extra modules go here.
+          nix-index-database.nixosModules.nix-index
           home-manager.nixosModules.home-manager
+
+          # Include home-manager configuration.
           {
-            home-manager.useGlobalPkgs = true;
-            home-manager.useUserPackages = true;
-            home-manager.users.${username} = import ./home.nix;
-            home-manager.extraSpecialArgs = {
-              inherit inputs stateVersion hostname username system;
+            home-manager = {
+              useGlobalPkgs = true;
+              useUserPackages = true;
+              extraSpecialArgs = {inherit inputs stateVersion hostname username system;};
+              users.${username} = import ./home.nix;
             };
           }
         ];
