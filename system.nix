@@ -59,8 +59,18 @@
     pulse.enable = true;
   };
 
-  # Programs
-  programs.firefox.enable = true;
+  programs = {
+    firefox.enable = true;
+
+    command-not-found.enable = false;
+    nix-index-database.comma.enable = true;
+    steam.enable = true;
+    gamescope.enable = true;
+    gamemode.enable = true;
+    corectrl.enable = true;
+
+    fish.enable = true;
+  };
 
   # Nix settings
   nixpkgs.config.allowUnfree = true;
