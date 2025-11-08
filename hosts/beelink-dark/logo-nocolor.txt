@@ -1,0 +1,30 @@
+    .;,                              .,,     
+   ',,xc:'                        .;::d:;.   
+  ;.  :lcoo;..                .'';:c;ld..',  
+ ;'  .,lXXXKklc:'           ,::;lx0XxxO.. :' 
+.l....',l;;dKKKOko.       .clok0kc;;'.c:. .l 
+'xcc.'   ...::''oo,,.   ...kc''.. .   .:,..c 
+.d;'.         .  'kOOdoxl:..          .;:;;' 
+  .',,;,;'...    ;lldxxdcc;..   ....':oc:,.  
+        ...''.. .'lcoolloo,' ..'''...        
+             ...;c;,;::cd;'cl:.              
+            .;,lc..';kOXW;..';ol             
+             .,. '';c0NWNld.....             
+             .:c;;..;oOOxxOlll;.             
+          ,;:;..:.,,,cxOOkxOxO0Kkl'          
+        ,:......;.;;;,:OOO00xdOOO0Kk'        
+       c,...',:c:;:;,'cOOO0KklOOO0KXK;       
+      cc..':ccl::;c:;,lOOO0KkoOOOOOO0K'      
+     .d..:lllool;',::;oOOO00oOOOOOOOO0x      
+     o:.;oooooooc;',;:okkOxdkOOOOOOOOO0:     
+    'x.,ooooooooolc:;;loookOOOOOOOOOOOOk     
+    ol'ooo:,',;:clolllodkOOOxoc:;:oOOOOK,    
+    d;;oo;:..;kko,'',;lcc;,:okx'..'lOOO0c    
+    ;c'olcd..xNNNXx'.....;ONNNNl..:cOOOk.    
+     c;;olod.:XNNNN0'...;XNNNW0'.::xkOO,     
+      ;;;oldo;;cxkO0c...o0Okd:';:coldk'      
+       ,:;llcdll;,........';cl',ooodo.       
+        .cc:lolkkkOkdoooxkOkkd.,oodc.        
+          .,,:cckOOOOOOOOOOOx,,c:,.  .''.    
+               ..;cdkOOkxoc,.                
+                     ';.                     
