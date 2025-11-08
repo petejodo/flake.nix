@@ -1,4 +1,4 @@
-{ config, pkgs, lib, ... }:
+{ config, pkgs, lib, username, ... }:
 
 {
   # Bootloader
@@ -31,6 +31,20 @@
     layout = "us";
     variant = "";
   };
+
+  # User configuration
+  users.users.${username} = {
+    isNormalUser = true;
+    extraGroups = [ "networkmanager" "wheel" ];
+  };
+
+  # Enable automatic login
+  services.displayManager.autoLogin.enable = true;
+  services.displayManager.autoLogin.user = username;
+
+  # Workaround for GNOME autologin
+  systemd.services."getty@tty1".enable = false;
+  systemd.services."autovt@tty1".enable = false;
 
   # Printing
   services.printing.enable = true;

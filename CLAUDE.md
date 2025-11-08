@@ -32,6 +32,8 @@ The configuration follows a multi-host pattern with shared and host-specific mod
 
 The `mkHost` function in flake.nix combines system.nix, home.nix, and the host-specific configuration to build each machine's configuration.
 
+This structure is based on this blog post, https://happens.lol/blog/how-to-nixos-insane/. If asked or if anything is unclear about where it should go, use this blog post as a reference as well as the associated github repo, https://github.com/happenslol/flake/.
+
 ## Common Commands
 
 ### Building and Applying Configuration
