@@ -36,4 +36,6 @@
   - [ ] elixir
   - [ ] gleam
   - [ ] zig
+- [ ] secondary round of installations:
+  - [ ] yazi (terminal file explorer, useful for niri?)
 - [ ] set up niri

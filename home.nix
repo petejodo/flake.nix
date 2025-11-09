@@ -39,6 +39,7 @@ in {
     configFile = {
       "host".source = hostDotfiles;
       "fastfetch".source = "${dotfiles}/fastfetch";
+      "fish".source = "${dotfiles}/fish";
       "helix".source = "${dotfiles}/helix";
     };
   };
