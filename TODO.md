@@ -21,8 +21,9 @@
     - [x] btop
 - [ ] setup a nerd font
 - [ ] configure fish, including w/ starship
+- [ ] setup configuration for ghostty
 - [ ] set default git editor to helix
-- [ ] set default shell to fish
+- [x] set default shell to fish
 - [ ] figure out if configuration like keypress delay is something that goes into nix config
 - [ ] configure git that's tracked by nixos to do the following
     - default branch name to be `main`
