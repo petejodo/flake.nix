@@ -40,3 +40,7 @@
 - [ ] secondary round of installations:
   - [ ] yazi (terminal file explorer, useful for niri?)
 - [ ] set up niri
+- [ ] fix fastfetch logo misalignment when printed from fish
+- [ ] set kagi as search engine in firefox
+- [ ] configure firefox w/ sidebery
+- [ ] copy useful aliases from cachyos's fish config

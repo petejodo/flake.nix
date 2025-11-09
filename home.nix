@@ -40,6 +40,7 @@ in {
       "host".source = hostDotfiles;
       "fastfetch".source = "${dotfiles}/fastfetch";
       "fish".source = "${dotfiles}/fish";
+      "ghostty".source = "${dotfiles}/ghostty";
       "helix".source = "${dotfiles}/helix";
     };
   };
