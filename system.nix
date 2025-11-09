@@ -62,6 +62,15 @@
     pulse.enable = true;
   };
 
+  # Fonts
+  fonts = {
+    packages = with pkgs; [
+      nerd-fonts.fira-code
+      nerd-fonts.iosevka-term
+      nerd-fonts.caskaydia-cove
+    ];
+  };
+
   programs = {
     firefox.enable = true;
 

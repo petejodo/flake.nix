@@ -19,9 +19,9 @@
     - [x] helix
     - [x] starship
     - [x] btop
-- [ ] setup a nerd font
-- [ ] configure fish, including w/ starship
-- [ ] setup configuration for ghostty
+- [x] setup a nerd font
+- [x] configure fish, including w/ starship
+- [x] setup configuration for ghostty
 - [ ] set default git editor to helix
 - [x] set default shell to fish
 - [ ] figure out if configuration like keypress delay is something that goes into nix config
