@@ -9,6 +9,8 @@
   home = "/home/${username}";
   dotfiles =
     config.lib.file.mkOutOfStoreSymlink "${home}/.flake/config";
+  hostDotfiles =
+    config.lib.file.mkOutOfStoreSymlink "${home}/.flake/hosts/${hostname}/config";
 in {
   programs = {
     home-manager.enable = true;
@@ -32,6 +34,7 @@ in {
 
   xdg = {
     configFile = {
+      "host".source = hostDotfiles;
       "fastfetch".source = "${dotfiles}/fastfetch";
       "helix".source = "${dotfiles}/helix";
     };
