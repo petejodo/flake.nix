@@ -37,6 +37,9 @@
     isNormalUser = true;
     extraGroups = [ "networkmanager" "wheel" ];
   };
+  users.defaultUserShell = pkgs.fish;
+  environment.enableAllTerminfo = true;
+  environment.shells = [pkgs.fish pkgs.bash];
 
   # Enable automatic login
   services.displayManager.autoLogin.enable = true;
@@ -63,7 +66,7 @@
     firefox.enable = true;
 
     command-not-found.enable = false;
-    nix-index-database.comma.enable = true;
+    nix-index-database.comma.enable = true; # Try out packages w/o installing, type `, <package-name>`
     steam.enable = true;
     gamescope.enable = true;
     gamemode.enable = true;
@@ -80,6 +83,7 @@
   environment.systemPackages = with pkgs; [
     git
     claude-code
+    ghostty
     helix
   ];
 

@@ -23,11 +23,14 @@ in {
     # User-specific packages
     packages = with pkgs; [
       bat # `cat` replacement
+      btop # `top` replacement
+      eza # `ls` replacement
       fastfetch # terminal intro screen
       fd # `find` replacement 
       fzf # fuzzy finder
       localsend # send files over your local network
       ripgrep # `grep` replacement
+      starship # shell prompt
       zoxide # `cd` replacement
     ];
   };

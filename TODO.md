@@ -6,21 +6,34 @@
 - [x] setup home-manager
 - [x] copy some system configuration
 - [x] figure out how to get ~/.config to be managed by nixos
-- [ ] first round of installations:
-    - [ ] ghostty
-    - [ ] fish
-    - [ ] fastfetch
-    - [ ] fish
-    - [ ] fzf
-    - [ ] ripgrep
-    - [ ] fd
-    - [ ] eza
-    - [ ] bat
-    - [ ] zoxide
-    - [ ] helix
+- [x] first round of installations:
+    - [x] ghostty
+    - [x] fastfetch
+    - [x] fish
+    - [x] fzf
+    - [x] ripgrep
+    - [x] fd
+    - [x] eza
+    - [x] bat
+    - [x] zoxide
+    - [x] helix
+    - [x] starship
+    - [x] btop
+- [ ] setup a nerd font
+- [ ] configure fish, including w/ starship
 - [ ] set default git editor to helix
 - [ ] set default shell to fish
 - [ ] figure out if configuration like keypress delay is something that goes into nix config
 - [ ] configure git that's tracked by nixos to do the following
     - default branch name to be `main`
     - sets user.name and user.email
+- [ ] set up accounts
+  - [ ] discord (try vesktop?)
+  - [ ] spotify (try spotify-tui?)
+  - [ ] firefox
+- [ ] setup programming languages
+  - [ ] erlang
+  - [ ] elixir
+  - [ ] gleam
+  - [ ] zig
+- [ ] set up niri
