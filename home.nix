@@ -1,23 +1,33 @@
-{ config, pkgs, lib, stateVersion, hostname, username, ... }:
-
 {
-  # This value determines the Home Manager release that your configuration is
-  # compatible with. This helps avoid breakage when a new Home Manager release
-  # introduces backwards incompatible changes.
-  home.stateVersion = stateVersion;
+  config,
+  pkgs,
+  stateVersion,
+  hostname,
+  username,
+  ...
+}: let
+  home = "/home/${username}";
+  dotfiles =
+    config.lib.file.mkOutOfStoreSymlink "${home}/.flake/config";
+in {
+  programs = {
+    home-manager.enable = true;
+  };
 
-  # Home directory path
-  home.username = username;
-  home.homeDirectory = "/home/${username}";
+  home = {
+    inherit stateVersion username;
+    homeDirectory = home;
 
-  # User-specific packages
-  home.packages = with pkgs; [
-    # Add user packages here
-  ];
+    # User-specific packages
+    packages = with pkgs; [
+      # Add user packages here
+    ];
+  };
 
-  # Let Home Manager install and manage itself
-  programs.home-manager.enable = true;
-
-  # Home Manager can manage your shell and other dotfiles
-  # Example: programs.bash.enable = true;
+  xdg = {
+    configFile = {
+      "fastfetch".source = "${dotfiles}/fastfetch";
+      "helix".source = "${dotfiles}/helix";
+    };
+  };
 }

@@ -1,0 +1,10 @@
+theme = "base16_default"
+
+[editor]
+line-number = "relative"
+bufferline = "multiple"
+
+[editor.cursor-shape]
+normal = "block"
+insert = "bar"
+select = "underline"

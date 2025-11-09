@@ -4,19 +4,20 @@
 - [x] get claude-code installed
 - [x] convert configuration to using flakes
 - [x] setup home-manager
+- [x] copy some system configuration
+- [x] figure out how to get ~/.config to be managed by nixos
 - [ ] first round of installations:
-    - firefox
-    - ghostty
-    - fish
-    - fastfetch
-    - fish
-    - fzf
-    - ripgrep
-    - fd
-    - eza
-    - bat
-    - zoxide
-    - helix
+    - [ ] ghostty
+    - [ ] fish
+    - [ ] fastfetch
+    - [ ] fish
+    - [ ] fzf
+    - [ ] ripgrep
+    - [ ] fd
+    - [ ] eza
+    - [ ] bat
+    - [ ] zoxide
+    - [ ] helix
 - [ ] set default git editor to helix
 - [ ] set default shell to fish
 - [ ] figure out if configuration like keypress delay is something that goes into nix config
