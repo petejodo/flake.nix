@@ -39,6 +39,7 @@
   - [ ] zig
 - [ ] secondary round of installations:
   - [ ] yazi (terminal file explorer, useful for niri?)
+  - [ ] lazygit
 - [ ] set up niri
 - [ ] fix fastfetch logo misalignment when printed from fish
 - [ ] set kagi as search engine in firefox

@@ -38,6 +38,7 @@ in {
   xdg = {
     configFile = {
       "host".source = hostDotfiles;
+      "btop".source = "${dotfiles}/btop";
       "fastfetch".source = "${dotfiles}/fastfetch";
       "fish".source = "${dotfiles}/fish";
       "ghostty".source = "${dotfiles}/ghostty";
