@@ -20,7 +20,13 @@ in {
 
     # User-specific packages
     packages = with pkgs; [
-      # Add user packages here
+      bat # `cat` replacement
+      fastfetch # terminal intro screen
+      fd # `find` replacement 
+      fzf # fuzzy finder
+      localsend # send files over your local network
+      ripgrep # `grep` replacement
+      zoxide # `cd` replacement
     ];
   };
 
