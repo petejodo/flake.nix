@@ -28,6 +28,7 @@
 - [ ] configure git that's tracked by nixos to do the following
     - default branch name to be `main`
     - sets user.name and user.email
+    - aliases, diffs, etc
 - [ ] set up accounts
   - [ ] discord (try vesktop?)
   - [ ] spotify (try spotify-tui?)
@@ -40,8 +41,12 @@
 - [ ] secondary round of installations:
   - [ ] yazi (terminal file explorer, useful for niri?)
   - [ ] lazygit
+  - [ ] direnv (equivalent to mise?)
 - [ ] set up niri
 - [ ] fix fastfetch logo misalignment when printed from fish
 - [ ] set kagi as search engine in firefox
 - [ ] configure firefox w/ sidebery
-- [ ] copy useful aliases from cachyos's fish config
+- [x] copy useful aliases from cachyos's fish config
+- [ ] helix config for remembering where last left in file?
+  - if/when https://github.com/helix-editor/helix/pull/9143 gets merged or rebase and compile myself
+- [ ] ghostty keyboard shortcuts e.g. go to left split
