@@ -24,14 +24,14 @@
 - [x] setup configuration for ghostty
 - [x] set default git editor to helix
 - [x] set default shell to fish
-- [ ] figure out if configuration like keypress delay is something that goes into nix config
-- [ ] configure git that's tracked by nixos to do the following
+- [x] figure out if configuration like keypress delay is something that goes into nix config
+- [x] configure git that's tracked by nixos to do the following
     - default branch name to be `main`
     - sets user.name and user.email
     - aliases, diffs, etc
 - [ ] set up accounts
-  - [ ] discord (try vesktop?)
-  - [ ] spotify (try spotify-tui?)
+  - [x] discord (try vesktop?)
+  - [x] spotify (try spotify-tui?)
   - [ ] firefox
 - [ ] setup programming languages
   - [ ] erlang
@@ -46,9 +46,15 @@
   - [ ] mergiraf (merge utility for git)
 - [ ] set up niri
 - [ ] fix fastfetch logo misalignment when printed from fish
+  - seems like a ghostty or fish issue since it doesn't happen on subsequent splits or tabs
 - [ ] set kagi as search engine in firefox
 - [ ] configure firefox w/ sidebery
 - [x] copy useful aliases from cachyos's fish config
 - [ ] helix config for remembering where last left in file?
   - if/when https://github.com/helix-editor/helix/pull/9143 gets merged or rebase and compile myself
 - [ ] ghostty keyboard shortcuts e.g. go to left split
+- [ ] hide certain applications from desktop (see omarchy repo as an example) e.g.
+  - btop
+  - helix
+  - xterm
+  - web (gnome default browser)

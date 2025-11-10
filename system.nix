@@ -79,7 +79,6 @@
     steam.enable = true;
     gamescope.enable = true;
     gamemode.enable = true;
-    corectrl.enable = true;
 
     fish.enable = true;
   };

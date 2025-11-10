@@ -32,6 +32,10 @@ in {
       ripgrep # `grep` replacement
       starship # shell prompt
       zoxide # `cd` replacement
+
+      # Non-free / commercial apps
+      discord
+      spotify
     ];
 
     file = {
@@ -49,6 +53,13 @@ in {
       "fish".source = "${dotfiles}/fish";
       "ghostty".source = "${dotfiles}/ghostty";
       "helix".source = "${dotfiles}/helix";
+    };
+  };
+
+  dconf.settings = {
+    "org/gnome/desktop/peripherals/keyboard" = {
+      delay = 250;
+      repeat-interval = 25;
     };
   };
 }
