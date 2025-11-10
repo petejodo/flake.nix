@@ -29,10 +29,9 @@
     - default branch name to be `main`
     - sets user.name and user.email
     - aliases, diffs, etc
-- [ ] set up accounts
+- [x] set up accounts
   - [x] discord (try vesktop?)
   - [x] spotify (try spotify-tui?)
-  - [ ] firefox
 - [ ] setup programming languages
   - [ ] erlang
   - [ ] elixir
@@ -44,11 +43,14 @@
   - [ ] direnv (equivalent to mise?)
   - [ ] delta (diff for git)
   - [ ] mergiraf (merge utility for git)
+  - [ ] bitwarden-desktop (there's also bitwarden tool for rofi)
 - [ ] set up niri
 - [ ] fix fastfetch logo misalignment when printed from fish
   - seems like a ghostty or fish issue since it doesn't happen on subsequent splits or tabs
-- [ ] set kagi as search engine in firefox
-- [ ] configure firefox w/ sidebery
+- firefox configs
+  - [ ] log into firefox account
+  - [ ] configure firefox w/ sidebery
+  - [ ] set kagi as search engine in firefox
 - [x] copy useful aliases from cachyos's fish config
 - [ ] helix config for remembering where last left in file?
   - if/when https://github.com/helix-editor/helix/pull/9143 gets merged or rebase and compile myself
@@ -58,3 +60,4 @@
   - helix
   - xterm
   - web (gnome default browser)
+- [ ] discord tray icon?
