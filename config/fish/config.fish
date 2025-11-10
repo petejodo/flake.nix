@@ -25,6 +25,9 @@ end
 
 # Useful aliases
 
+## Shortcut for git
+alias g='git'
+
 ## Replace ls with eza
 alias ls='eza -al --color=always --group-directories-first --icons' # preferred listing
 alias la='eza -a --color=always --group-directories-first --icons' # all files and dirs

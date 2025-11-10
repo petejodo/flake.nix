@@ -33,6 +33,12 @@ in {
       starship # shell prompt
       zoxide # `cd` replacement
     ];
+
+    file = {
+      ".gitconfig".source = "${dotfiles}/git/gitconfig";
+      ".gitignore".source = "${dotfiles}/git/gitignore";
+      ".ssh/config".source = "${dotfiles}/ssh/config";
+    };
   };
 
   xdg = {

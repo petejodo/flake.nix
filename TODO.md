@@ -22,7 +22,7 @@
 - [x] setup a nerd font
 - [x] configure fish, including w/ starship
 - [x] setup configuration for ghostty
-- [ ] set default git editor to helix
+- [x] set default git editor to helix
 - [x] set default shell to fish
 - [ ] figure out if configuration like keypress delay is something that goes into nix config
 - [ ] configure git that's tracked by nixos to do the following
@@ -42,6 +42,8 @@
   - [ ] yazi (terminal file explorer, useful for niri?)
   - [ ] lazygit
   - [ ] direnv (equivalent to mise?)
+  - [ ] delta (diff for git)
+  - [ ] mergiraf (merge utility for git)
 - [ ] set up niri
 - [ ] fix fastfetch logo misalignment when printed from fish
 - [ ] set kagi as search engine in firefox
