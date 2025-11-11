@@ -1,4 +1,4 @@
-{ config, pkgs, lib, username, ... }:
+{ inputs, config, pkgs, lib, username, ... }:
 
 {
   # Bootloader
@@ -72,6 +72,7 @@
   };
 
   programs = {
+    niri.enable = true;
     firefox.enable = true;
 
     command-not-found.enable = false;
@@ -93,6 +94,8 @@
     claude-code
     ghostty
     helix
+
+    inputs.noctalia.packages.${pkgs.stdenv.hostPlatform.system}.default
   ];
 
   # System version
