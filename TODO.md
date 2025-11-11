@@ -62,7 +62,8 @@
   - helix
   - xterm
   - web (gnome default browser)
-- [ ] discord tray icon?
+- [x] discord tray icon? (for gnome)
 - [ ] unlock keyring on login?
 - [ ] setup firewall
 - [ ] install and setup tailscale
+- [ ] fix zoxide, created an alias for `z` but may have not been the right way to initialize

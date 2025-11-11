@@ -61,6 +61,7 @@ in {
       "fish".source = "${dotfiles}/fish";
       "ghostty".source = "${dotfiles}/ghostty";
       "helix".source = "${dotfiles}/helix";
+      "niri".source = "${dotfiles}/niri";
     };
   };
 
