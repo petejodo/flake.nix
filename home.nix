@@ -22,6 +22,7 @@ in {
 
     # User-specific packages
     packages = with pkgs; [
+      # Tools / Utilities
       bat # `cat` replacement
       btop # `top` replacement
       eza # `ls` replacement
@@ -32,6 +33,13 @@ in {
       ripgrep # `grep` replacement
       starship # shell prompt
       zoxide # `cd` replacement
+
+      # Languages
+      beamPackages.erlang
+      beamPackages.elixir
+      beamPackages.elixir-ls
+      gleam
+      zig
 
       # Non-free / commercial apps
       discord

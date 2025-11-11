@@ -32,22 +32,24 @@
 - [x] set up accounts
   - [x] discord (try vesktop?)
   - [x] spotify (try spotify-tui?)
-- [ ] setup programming languages
-  - [ ] erlang
-  - [ ] elixir
-  - [ ] gleam
-  - [ ] zig
+- [x] setup programming languages
+  - [x] erlang
+  - [x] elixir
+  - [x] gleam
+  - [x] zig
 - [ ] secondary round of installations:
   - [ ] yazi (terminal file explorer, useful for niri?)
   - [ ] lazygit
   - [ ] direnv (equivalent to mise?)
-  - [ ] delta (diff for git)
+  - [ ] delta (diff for git) - going to see if I feel like I really need this
   - [ ] mergiraf (merge utility for git)
   - [ ] bitwarden-desktop (there's also bitwarden tool for rofi)
+  - [ ] github's cli
+  - [ ] juijitsu (git replacement)
 - [ ] set up niri
 - [ ] fix fastfetch logo misalignment when printed from fish
   - seems like a ghostty or fish issue since it doesn't happen on subsequent splits or tabs
-- firefox configs
+- [ ] firefox configs
   - [ ] log into firefox account
   - [ ] configure firefox w/ sidebery
   - [ ] set kagi as search engine in firefox
@@ -61,3 +63,6 @@
   - xterm
   - web (gnome default browser)
 - [ ] discord tray icon?
+- [ ] unlock keyring on login?
+- [ ] setup firewall
+- [ ] install and setup tailscale

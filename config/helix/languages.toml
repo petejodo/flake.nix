@@ -1,0 +1,4 @@
+[[language]]
+name = "gleam"
+scope = "source.gleam"
+formatter = { command = "gleam", args = ["format", "--stdin"] }
