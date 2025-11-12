@@ -32,6 +32,7 @@
  
      "break",
  
+     // TODO de doesn't work on niri
      { "type": "de",       "key": " DE", "keyColor": "blue" },
      { "type": "lm",       "key": "│ ├", "keyColor": "blue" },
      { "type": "wm",       "key": "│ ├", "keyColor": "blue" },
@@ -41,11 +42,11 @@
 
      "break",
 
-     { "type": "custom",   "format": "\u001b[90m┌────────────────────Uptime / Age / DT────────────────────┐" },
+     { "type": "custom",   "format": "\u001b[90m┌────────────────────Uptime / Age / DT───────────────┐" },
      { "type": "command",  "key": "  OS Age ", "keyColor": "magenta", "text": "birth_install=$(stat -c %W /); current=$(date +%s); time_progression=$((current - birth_install)); days_difference=$((time_progression / 86400)); echo $days_difference days" },
      { "type": "uptime",   "key": "  Uptime ", "keyColor": "magenta" },
      { "type": "datetime", "key": "  DateTime ", "keyColor": "magenta" },
-     { "type": "custom", "format": "\u001b[90m└─────────────────────────────────────────────────────────┘" },
-     { "type": "colors", "paddingLeft": 2, "symbol": "circle" }
+     { "type": "custom",   "format": "\u001b[90m└────────────────────────────────────────────────────┘" },
+     { "type": "colors",   "paddingLeft": 2, "symbol": "circle" }
   ]
 }
