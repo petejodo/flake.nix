@@ -60,6 +60,8 @@
     alsa.enable = true;
     alsa.support32Bit = true;
     pulse.enable = true;
+    jack.enable = true;
+    wireplumber.enable = true;
   };
 
   # Fonts
@@ -94,7 +96,14 @@
     claude-code
     ghostty
     helix
+    xwayland-satellite
 
+    # Sound / Bluetooth related
+    bluez
+    bluez-tools
+    alsa-utils
+
+    # Shell for Niri
     inputs.noctalia.packages.${pkgs.stdenv.hostPlatform.system}.default
   ];
 
