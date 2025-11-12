@@ -46,7 +46,7 @@
   - [ ] bitwarden-desktop (there's also bitwarden tool for rofi)
   - [ ] github's cli
   - [ ] juijitsu (git replacement)
-- [ ] set up niri
+- [x] set up niri
 - [ ] fix fastfetch logo misalignment when printed from fish
   - seems like a ghostty or fish issue since it doesn't happen on subsequent splits or tabs
 - [ ] firefox configs
@@ -67,3 +67,14 @@
 - [ ] setup firewall
 - [ ] install and setup tailscale
 - [ ] fix zoxide, created an alias for `z` but may have not been the right way to initialize
+- Keyboard shortcuts
+  - [ ] Mod + Tab - go to previous focused window
+  - [ ] Ctrl + Tab - go to previous focused window of the same application
+- Niri issues / config
+  - [ ] ...
+- Noctalia issues / config
+  - [ ] Track configuration in `~/.flake`
+  - [ ] Audio tray icon doesn't work correctly when on my sony headphones
+  - [ ] Widget that opens when clicking the date/time tray icon still displaying 24 hour clock
+  - [ ] Remove config for overview when mouse goes to top-left corner
+  - [ ] Screen recording not working
