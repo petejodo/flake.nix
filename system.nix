@@ -95,7 +95,10 @@
     git
     claude-code
     ghostty
+    adwaita-icon-theme
     helix
+
+    # Wayland utilities
     xwayland-satellite
 
     # Sound / Bluetooth related

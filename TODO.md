@@ -50,7 +50,7 @@
 - [ ] fix fastfetch logo misalignment when printed from fish
   - seems like a ghostty or fish issue since it doesn't happen on subsequent splits or tabs
 - [ ] firefox configs
-  - [ ] log into firefox account
+  - [x] log into firefox account
   - [ ] configure firefox w/ sidebery
   - [ ] set kagi as search engine in firefox
 - [x] copy useful aliases from cachyos's fish config
@@ -61,20 +61,27 @@
   - btop
   - helix
   - xterm
-  - web (gnome default browser)
+  - web (gnome default browser) - there's nix settings that allow for doing this
 - [x] discord tray icon? (for gnome)
 - [ ] unlock keyring on login?
 - [ ] setup firewall
 - [ ] install and setup tailscale
 - [ ] fix zoxide, created an alias for `z` but may have not been the right way to initialize
 - Keyboard shortcuts
-  - [ ] Mod + Tab - go to previous focused window
+  - [x] Mod + Tab - go to previous focused window
   - [ ] Ctrl + Tab - go to previous focused window of the same application
 - Niri issues / config
-  - [ ] ...
+  - [x] swayidle / swaylock
+    - switched to hypridle / hyprlock as systemd services
+  - [ ] use niri-switch or niriswitcher instead of just focusing previous window
+  - [x] cursor size and theme issue
+    - ended up adding adwaita icons, not sure if that's what I want though
+    - still don't know where the icons are installed either
 - Noctalia issues / config
   - [ ] Track configuration in `~/.flake`
   - [ ] Audio tray icon doesn't work correctly when on my sony headphones
   - [ ] Widget that opens when clicking the date/time tray icon still displaying 24 hour clock
+    - may be fixed already
   - [ ] Remove config for overview when mouse goes to top-left corner
-  - [ ] Screen recording not working
+  - [ ] Screen recording not working, requires a specific xdg- package, noctalia docs mention it
+  - [ ] Need to set up wallpaper

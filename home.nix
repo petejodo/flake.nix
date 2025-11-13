@@ -32,6 +32,8 @@ in {
       localsend # send files over your local network
       ripgrep # `grep` replacement
       starship # shell prompt
+      hypridle # idle management daemon
+      hyprlock # screen locker
       zoxide # `cd` replacement
 
       # Languages
@@ -61,6 +63,7 @@ in {
       "fish".source = "${dotfiles}/fish";
       "ghostty".source = "${dotfiles}/ghostty";
       "helix".source = "${dotfiles}/helix";
+      "hypr".source = "${dotfiles}/hypr";
       "niri".source = "${dotfiles}/niri";
     };
   };
@@ -69,6 +72,21 @@ in {
     "org/gnome/desktop/peripherals/keyboard" = {
       delay = 250;
       repeat-interval = 25;
+    };
+  };
+
+  systemd.user.services.hypridle = {
+    Unit = {
+      Description = "Hypridle idle daemon";
+      After = [ "graphical-session.target" ];
+      ConditionEnvironment = "DESKTOP_SESSION=niri";
+    };
+    Service = {
+      ExecStart = "${pkgs.hypridle}/bin/hypridle";
+      Restart = "on-failure";
+    };
+    Install = {
+      WantedBy = [ "graphical-session.target" ];
     };
   };
 }
