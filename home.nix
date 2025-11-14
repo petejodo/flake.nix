@@ -1,5 +1,6 @@
 {
   config,
+  lib,
   pkgs,
   stateVersion,
   hostname,
@@ -32,9 +33,10 @@ in {
       localsend # send files over your local network
       ripgrep # `grep` replacement
       starship # shell prompt
-      hypridle # idle management daemon
-      hyprlock # screen locker
       zoxide # `cd` replacement
+
+      # Wayland utilities
+      hyprlock # screen locker
 
       # Languages
       beamPackages.erlang
@@ -75,18 +77,50 @@ in {
     };
   };
 
-  systemd.user.services.hypridle = {
+  systemd.user.services.polkit-gnome-authentication-agent-1 = {
     Unit = {
-      Description = "Hypridle idle daemon";
-      After = [ "graphical-session.target" ];
-      ConditionEnvironment = "DESKTOP_SESSION=niri";
-    };
-    Service = {
-      ExecStart = "${pkgs.hypridle}/bin/hypridle";
-      Restart = "on-failure";
+      Description = "Polkit GNOME authentication agent";
+      BindsTo = "niri.service";
+      After = "niri.service";
     };
     Install = {
-      WantedBy = [ "graphical-session.target" ];
+      WantedBy = [ "niri.service" ];
+    };
+    Service = {
+      Type = "simple";
+      ExecStart = "${pkgs.polkit_gnome}/libexec/polkit-gnome-authentication-agent-1";
+      Restart = "on-failure";
+      RestartSec = 1;
+      TimeoutStopSec = 10;
+    };
+  };
+
+  systemd.user.services.swayidle = let
+    hyprlock = "${pkgs.hyprlock}/bin/hyprlock";
+    lock = "pidof ${hyprlock} || ${hyprlock}";
+    display = status: "${pkgs.niri}/bin/niri msg action power-${status}-monitors";
+    swayidle = "${pkgs.swayidle}/bin/swayidle";
+  in {
+    Unit = {
+      Description = "Idle manager for Wayland";
+      Documentation = "man:swayidle(1)";
+      BindsTo = "niri.service";
+      After = "niri.service";
+    };
+    Install = {
+      WantedBy = [ "niri.service" ];
+    };
+    Service = {
+      Type = "simple";
+      Restart = "always";
+      # swayidle executes commands using "sh -c", so the PATH needs to contain a shell.
+      Environment = [ "PATH=${lib.makeBinPath [ pkgs.bash ]}" ];
+      ExecStart = "${swayidle} -w " +
+        "timeout 300 '${lock}' " +
+        "timeout 330 '${display "off"}' " +
+        "resume '${display "on"}' " +
+        "timeout 600 '${pkgs.systemd}/bin/systemctl suspend' " +
+        "before-sleep '${lock}'";
     };
   };
 }
