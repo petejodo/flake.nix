@@ -32,6 +32,26 @@
     variant = "";
   };
 
+  # GNOME Keyring
+  services.gnome.gnome-keyring.enable = true;
+
+  # XDG Desktop Portal configuration for Niri + GNOME
+  xdg.portal = {
+    enable = true;
+    extraPortals = with pkgs; [
+      xdg-desktop-portal-gnome
+      xdg-desktop-portal-gtk
+    ];
+    config = {
+      common = {
+        default = [ "gnome" "gtk" ];
+      };
+      niri = {
+        default = [ "gnome" "gtk" ];
+      };
+    };
+  };
+
   # User configuration
   users.users.${username} = {
     isNormalUser = true;
@@ -105,6 +125,9 @@
     bluez
     bluez-tools
     alsa-utils
+
+    # Polkit authentication agent
+    polkit_gnome
 
     # Shell for Niri
     inputs.noctalia.packages.${pkgs.stdenv.hostPlatform.system}.default
