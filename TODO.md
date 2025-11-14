@@ -62,6 +62,9 @@
   - helix
   - xterm
   - web (gnome default browser) - there's nix settings that allow for doing this
+- [ ] something is adding the following packages that should be removed (can be seen in environment.systemPackages in repl)
+  - alacritty
+  - foot
 - [x] discord tray icon? (for gnome)
 - [ ] unlock keyring on login?
 - [ ] setup firewall
@@ -70,13 +73,23 @@
 - Keyboard shortcuts
   - [x] Mod + Tab - go to previous focused window
   - [ ] Ctrl + Tab - go to previous focused window of the same application
+  - [ ] ??? - dismiss notification
 - Niri issues / config
   - [x] swayidle / swaylock
     - switched to hypridle / hyprlock as systemd services
+    - [x] switched back to swayidle but its not working
+    - [ ] hyprlock preventing suspend, logging in then suspends the system
+    - [ ] was getting an issue when swayidle was added as a package where it would crash but works without it. Unsure why?
+  - [ ] better styling of hyprlock, use omarchy's as a guide? 
   - [ ] use niri-switch or niriswitcher instead of just focusing previous window
   - [x] cursor size and theme issue
     - ended up adding adwaita icons, not sure if that's what I want though
     - still don't know where the icons are installed either
+  - [x] gnome keyring
+  - [x] xdg-desktop-portal-gtk (and -gnome)
+  - [x] polkit_gnome
+    - [x] test via `systemctl --user status polkit-gnome-authentication-agent-1`
+  - [ ] kind of long boot time from pressing enter in gdm to seeing desktop, black screen for a bit 
 - Noctalia issues / config
   - [ ] Track configuration in `~/.flake`
   - [ ] Audio tray icon doesn't work correctly when on my sony headphones
