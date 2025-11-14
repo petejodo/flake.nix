@@ -40,16 +40,16 @@ This structure is based on this blog post, https://happens.lol/blog/how-to-nixos
 
 ```bash
 # Build the system configuration (test without applying)
-sudo nixos-rebuild build --flake .#nixos
+sudo nixos-rebuild build --flake .#beelink-dark
 
 # Build and switch to new configuration
-sudo nixos-rebuild switch --flake .#nixos
+sudo nixos-rebuild switch --flake .#beelink-dark
 
 # Build and make bootable (apply on next boot)
-sudo nixos-rebuild boot --flake .#nixos
+sudo nixos-rebuild boot --flake .#beelink-dark
 
 # Test configuration temporarily (reverts on reboot)
-sudo nixos-rebuild test --flake .#nixos
+sudo nixos-rebuild test --flake .#beelink-dark
 ```
 
 ### Flake Management
