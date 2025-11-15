@@ -46,6 +46,7 @@
   - [ ] bitwarden-desktop (there's also bitwarden tool for rofi)
   - [ ] github's cli
   - [ ] juijitsu (git replacement)
+  - [ ] tailscale
 - [x] set up niri
 - [ ] fix fastfetch logo misalignment when printed from fish
   - seems like a ghostty or fish issue since it doesn't happen on subsequent splits or tabs
@@ -68,7 +69,6 @@
 - [x] discord tray icon? (for gnome)
 - [ ] unlock keyring on login?
 - [ ] setup firewall
-- [ ] install and setup tailscale
 - [ ] fix zoxide, created an alias for `z` but may have not been the right way to initialize
 - Keyboard shortcuts
   - [x] Mod + Tab - go to previous focused window
@@ -78,7 +78,7 @@
   - [x] swayidle / swaylock
     - switched to hypridle / hyprlock as systemd services
     - [x] switched back to swayidle but its not working
-    - [ ] hyprlock preventing suspend, logging in then suspends the system
+    - [x] hyprlock preventing suspend, logging in then suspends the system
     - [ ] was getting an issue when swayidle was added as a package where it would crash but works without it. Unsure why?
   - [ ] better styling of hyprlock, use omarchy's as a guide? 
   - [ ] use niri-switch or niriswitcher instead of just focusing previous window
@@ -97,4 +97,4 @@
     - may be fixed already
   - [ ] Remove config for overview when mouse goes to top-left corner
   - [ ] Screen recording not working, requires a specific xdg- package, noctalia docs mention it
-  - [ ] Need to set up wallpaper
+  - [x] Need to set up wallpaper

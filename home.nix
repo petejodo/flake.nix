@@ -113,9 +113,7 @@ in {
     Service = {
       Type = "simple";
       Restart = "always";
-      # swayidle executes commands using "sh -c", so the PATH needs to contain a shell.
-      Environment = [ "PATH=${lib.makeBinPath [ pkgs.bash ]}" ];
-      ExecStart = "${swayidle} -w " +
+      ExecStart = "${swayidle} " +
         "timeout 300 '${lock}' " +
         "timeout 330 '${display "off"}' " +
         "resume '${display "on"}' " +

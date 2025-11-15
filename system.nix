@@ -106,6 +106,11 @@
     fish.enable = true;
   };
 
+  # Required for hyprlock
+  # TODO move hyprlock package from home.nix to systemPackages?
+  security.pam.services.hyprlock = {};
+  security.pam.services.gdm.enableGnomeKeyring = true;
+
   # Nix settings
   nixpkgs.config.allowUnfree = true;
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
