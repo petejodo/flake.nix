@@ -34,6 +34,8 @@
 
   # GNOME Keyring
   services.gnome.gnome-keyring.enable = true;
+  # unlocking gnome keyring supposedly doesn't work with autologin unless pw is blank
+  security.pam.services.login.enableGnomeKeyring = true;
 
   # XDG Desktop Portal configuration for Niri + GNOME
   xdg.portal = {
@@ -109,7 +111,6 @@
   # Required for hyprlock
   # TODO move hyprlock package from home.nix to systemPackages?
   security.pam.services.hyprlock = {};
-  security.pam.services.gdm.enableGnomeKeyring = true;
 
   # Nix settings
   nixpkgs.config.allowUnfree = true;

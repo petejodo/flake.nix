@@ -80,7 +80,7 @@
     - [x] switched back to swayidle but its not working
     - [x] hyprlock preventing suspend, logging in then suspends the system
     - [ ] was getting an issue when swayidle was added as a package where it would crash but works without it. Unsure why?
-  - [ ] better styling of hyprlock, use omarchy's as a guide? 
+  - [x] better styling of hyprlock, use omarchy's as a guide? 
   - [ ] use niri-switch or niriswitcher instead of just focusing previous window
   - [x] cursor size and theme issue
     - ended up adding adwaita icons, not sure if that's what I want though
