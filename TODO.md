@@ -69,7 +69,7 @@
 - [x] discord tray icon? (for gnome)
 - [ ] unlock keyring on login?
 - [ ] setup firewall
-- [ ] fix zoxide, created an alias for `z` but may have not been the right way to initialize
+- [x] fix zoxide, created an alias for `z` but may have not been the right way to initialize
 - Keyboard shortcuts
   - [x] Mod + Tab - go to previous focused window
   - [ ] Ctrl + Tab - go to previous focused window of the same application

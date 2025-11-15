@@ -28,9 +28,6 @@ end
 ## Shortcut for git
 alias g='git'
 
-## Shortcut for zoxide
-alias z='zoxide'
-
 ## Replace ls with eza
 alias ls='eza -al --color=always --group-directories-first --icons' # preferred listing
 alias la='eza -a --color=always --group-directories-first --icons' # all files and dirs
@@ -49,3 +46,6 @@ alias psmem10='ps auxf | sort -nr -k 4 | head -10'
 
 # Get the error messages from journalctl
 alias jctl="journalctl -p 3 -xb"
+
+# Setup zoxide
+zoxide init fish | source
