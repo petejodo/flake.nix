@@ -1,5 +1,68 @@
 # TODO
 
+- [ ] secondary round of installations:
+  - [ ] yazi (terminal file explorer, useful for niri?)
+  - [ ] lazygit
+  - [ ] direnv (equivalent to mise?) - look into devshells and how this plays into it
+  - [ ] delta (diff for git) - going to see if I feel like I really need this
+  - [ ] mergiraf (merge utility for git)
+  - [ ] bitwarden-desktop (there's also bitwarden tool for rofi)
+  - [ ] github's cli
+  - [ ] juijitsu (git replacement)
+  - [ ] tailscale
+  - [ ] tldr (when you just want examples instead of paragraphs from man-pages)
+- [x] set up niri
+- [ ] fix fastfetch logo misalignment when printed from fish
+  - seems like a ghostty or fish issue since it doesn't happen on subsequent splits or tabs
+- [ ] firefox configs
+  - [x] log into firefox account
+  - [x] configure firefox w/ sidebery
+  - [x] style userChrome.css
+  - [x] style homepage with userContent.css
+  - [ ] set kagi as search engine in firefox
+  - [ ] update keyboard shortcuts for bitwarden extensions and sidebery? Currently SHFT+ALT+U and CTRL+E respectively
+  - [ ] clean up userChrome.css and userContent.css
+  - [ ] add firefox userChrome.css and userContent.css to configs
+- [ ] setup thunderbird
+- [x] copy useful aliases from cachyos's fish config
+- [ ] helix config for remembering where last left in file?
+  - if/when https://github.com/helix-editor/helix/pull/9143 gets merged or rebase and compile myself
+- [ ] ghostty keyboard shortcuts e.g. go to left split
+- [ ] hide certain applications from desktop (see omarchy repo as an example) e.g.
+  - btop
+  - helix
+  - xterm
+  - web (gnome default browser) - there's nix settings that allow for doing this
+- [ ] something is adding the following packages that should be removed (can be seen in environment.systemPackages in repl)
+  - alacritty
+  - foot
+- [x] discord tray icon? (for gnome)
+- [ ] unlock keyring on login?
+  - likely can't be done w/ autologin enabled
+- [ ] setup firewall
+  - skipping since this isn't laptop but will have to revisit when adding my laptop to this configuration
+- [x] fix zoxide, created an alias for `z` but may have not been the right way to initialize
+- [ ] was getting an issue when swayidle was added as a package where it would crash but works without it. Unsure why?
+- [ ] kind of long boot time from pressing enter in gdm to seeing niri, black screen for a bit 
+- [ ] use app switcher next niri release instead of just focusing previous window
+- [ ] setup mozilla vpn but consider just using mulvad directly
+- Noctalia issues / config
+  - [ ] Track configuration in `~/.flake`
+  - [ ] Audio tray icon doesn't work correctly when on my sony headphones
+  - [ ] Widget that opens when clicking the date/time tray icon still displaying 24 hour clock
+    - may be fixed already
+  - [ ] Remove config for overview when mouse goes to top-left corner
+  - [ ] Screen recording not working, requires a specific xdg- package, noctalia docs mention it
+  - [x] Need to set up wallpaper
+
+## Keyboard Shortcuts
+
+- [x] Mod + Tab - go to previous focused window
+- [ ] Ctrl + Tab - go to previous focused window of the same application
+- [ ] ??? - dismiss notification
+
+## Completed / Archived
+
 - [x] git init NixOS configuration as-is
 - [x] get claude-code installed
 - [x] convert configuration to using flakes
@@ -37,51 +100,14 @@
   - [x] elixir
   - [x] gleam
   - [x] zig
-- [ ] secondary round of installations:
-  - [ ] yazi (terminal file explorer, useful for niri?)
-  - [ ] lazygit
-  - [ ] direnv (equivalent to mise?)
-  - [ ] delta (diff for git) - going to see if I feel like I really need this
-  - [ ] mergiraf (merge utility for git)
-  - [ ] bitwarden-desktop (there's also bitwarden tool for rofi)
-  - [ ] github's cli
-  - [ ] juijitsu (git replacement)
-  - [ ] tailscale
-- [x] set up niri
-- [ ] fix fastfetch logo misalignment when printed from fish
-  - seems like a ghostty or fish issue since it doesn't happen on subsequent splits or tabs
-- [ ] firefox configs
-  - [x] log into firefox account
-  - [ ] configure firefox w/ sidebery
-  - [ ] set kagi as search engine in firefox
-- [x] copy useful aliases from cachyos's fish config
-- [ ] helix config for remembering where last left in file?
-  - if/when https://github.com/helix-editor/helix/pull/9143 gets merged or rebase and compile myself
-- [ ] ghostty keyboard shortcuts e.g. go to left split
-- [ ] hide certain applications from desktop (see omarchy repo as an example) e.g.
-  - btop
-  - helix
-  - xterm
-  - web (gnome default browser) - there's nix settings that allow for doing this
-- [ ] something is adding the following packages that should be removed (can be seen in environment.systemPackages in repl)
-  - alacritty
-  - foot
-- [x] discord tray icon? (for gnome)
-- [ ] unlock keyring on login?
-- [ ] setup firewall
-- [x] fix zoxide, created an alias for `z` but may have not been the right way to initialize
-- Keyboard shortcuts
-  - [x] Mod + Tab - go to previous focused window
-  - [ ] Ctrl + Tab - go to previous focused window of the same application
-  - [ ] ??? - dismiss notification
 - Niri issues / config
   - [x] swayidle / swaylock
     - switched to hypridle / hyprlock as systemd services
     - [x] switched back to swayidle but its not working
     - [x] hyprlock preventing suspend, logging in then suspends the system
-    - [ ] was getting an issue when swayidle was added as a package where it would crash but works without it. Unsure why?
   - [x] better styling of hyprlock, use omarchy's as a guide? 
-  - [ ] use niri-switch or niriswitcher instead of just focusing previous window
+  - [x] use niri-switch or niriswitcher instead of just focusing previous window
+    - wait for next release of niri instead
   - [x] cursor size and theme issue
     - ended up adding adwaita icons, not sure if that's what I want though
     - still don't know where the icons are installed either
@@ -89,12 +115,3 @@
   - [x] xdg-desktop-portal-gtk (and -gnome)
   - [x] polkit_gnome
     - [x] test via `systemctl --user status polkit-gnome-authentication-agent-1`
-  - [ ] kind of long boot time from pressing enter in gdm to seeing desktop, black screen for a bit 
-- Noctalia issues / config
-  - [ ] Track configuration in `~/.flake`
-  - [ ] Audio tray icon doesn't work correctly when on my sony headphones
-  - [ ] Widget that opens when clicking the date/time tray icon still displaying 24 hour clock
-    - may be fixed already
-  - [ ] Remove config for overview when mouse goes to top-left corner
-  - [ ] Screen recording not working, requires a specific xdg- package, noctalia docs mention it
-  - [x] Need to set up wallpaper

@@ -98,6 +98,7 @@
   programs = {
     niri.enable = true;
     firefox.enable = true;
+    thunderbird.enable = true;
 
     command-not-found.enable = false;
     nix-index-database.comma.enable = true; # Try out packages w/o installing, type `, <package-name>`
@@ -123,6 +124,8 @@
     ghostty
     adwaita-icon-theme
     helix
+    bitwarden-desktop
+    bitwarden-cli # not sure whether I'd use the CLI or desktop app more
 
     # Wayland utilities
     xwayland-satellite
@@ -137,6 +140,13 @@
 
     # Shell for Niri
     inputs.noctalia.packages.${pkgs.stdenv.hostPlatform.system}.default
+  ];
+
+  # Remove default GNOME applications
+  environment.gnome.excludePackages = with pkgs; [
+    epiphany
+    geary
+    yelp
   ];
 
   # System version
