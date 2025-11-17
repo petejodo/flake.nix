@@ -23,7 +23,6 @@
   - [ ] update keyboard shortcuts for bitwarden extensions and sidebery? Currently SHFT+ALT+U and CTRL+E respectively
   - [ ] clean up userChrome.css and userContent.css
   - [ ] add firefox userChrome.css and userContent.css to configs
-- [ ] setup thunderbird
 - [x] copy useful aliases from cachyos's fish config
 - [ ] helix config for remembering where last left in file?
   - if/when https://github.com/helix-editor/helix/pull/9143 gets merged or rebase and compile myself

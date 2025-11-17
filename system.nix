@@ -98,7 +98,6 @@
   programs = {
     niri.enable = true;
     firefox.enable = true;
-    thunderbird.enable = true;
 
     command-not-found.enable = false;
     nix-index-database.comma.enable = true; # Try out packages w/o installing, type `, <package-name>`
