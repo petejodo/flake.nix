@@ -6,24 +6,13 @@
   - [ ] direnv (equivalent to mise?) - look into devshells and how this plays into it
   - [ ] delta (diff for git) - going to see if I feel like I really need this
   - [ ] mergiraf (merge utility for git)
-  - [ ] bitwarden-desktop (there's also bitwarden tool for rofi)
+  - [x] bitwarden-desktop (there's also bitwarden tool for rofi)
   - [ ] github's cli
   - [ ] juijitsu (git replacement)
   - [ ] tailscale
   - [ ] tldr (when you just want examples instead of paragraphs from man-pages)
-- [x] set up niri
 - [ ] fix fastfetch logo misalignment when printed from fish
   - seems like a ghostty or fish issue since it doesn't happen on subsequent splits or tabs
-- [ ] firefox configs
-  - [x] log into firefox account
-  - [x] configure firefox w/ sidebery
-  - [x] style userChrome.css
-  - [x] style homepage with userContent.css
-  - [ ] set kagi as search engine in firefox
-  - [ ] update keyboard shortcuts for bitwarden extensions and sidebery? Currently SHFT+ALT+U and CTRL+E respectively
-  - [ ] clean up userChrome.css and userContent.css
-  - [ ] add firefox userChrome.css and userContent.css to configs
-- [x] copy useful aliases from cachyos's fish config
 - [ ] helix config for remembering where last left in file?
   - if/when https://github.com/helix-editor/helix/pull/9143 gets merged or rebase and compile myself
 - [ ] ghostty keyboard shortcuts e.g. go to left split
@@ -35,24 +24,26 @@
 - [ ] something is adding the following packages that should be removed (can be seen in environment.systemPackages in repl)
   - alacritty
   - foot
-- [x] discord tray icon? (for gnome)
 - [ ] unlock keyring on login?
   - likely can't be done w/ autologin enabled
 - [ ] setup firewall
   - skipping since this isn't laptop but will have to revisit when adding my laptop to this configuration
-- [x] fix zoxide, created an alias for `z` but may have not been the right way to initialize
 - [ ] was getting an issue when swayidle was added as a package where it would crash but works without it. Unsure why?
 - [ ] kind of long boot time from pressing enter in gdm to seeing niri, black screen for a bit 
 - [ ] use app switcher next niri release instead of just focusing previous window
 - [ ] setup mozilla vpn but consider just using mulvad directly
 - Noctalia issues / config
   - [ ] Track configuration in `~/.flake`
-  - [ ] Audio tray icon doesn't work correctly when on my sony headphones
-  - [ ] Widget that opens when clicking the date/time tray icon still displaying 24 hour clock
+  - [x] Audio tray icon doesn't work correctly when on my sony headphones
+  - [x] Widget that opens when clicking the date/time tray icon still displaying 24 hour clock
     - may be fixed already
   - [ ] Remove config for overview when mouse goes to top-left corner
   - [ ] Screen recording not working, requires a specific xdg- package, noctalia docs mention it
   - [x] Need to set up wallpaper
+- [ ] collect a shortcut cheatsheet
+  - include gmail shortcuts
+- [ ] configure a way in helix to delete/yank multiple lines and then paste as a single block
+  - see https://github.com/helix-editor/helix/discussions/8601
 
 ## Keyboard Shortcuts
 
@@ -60,8 +51,29 @@
 - [ ] Ctrl + Tab - go to previous focused window of the same application
 - [ ] ??? - dismiss notification
 
+## Debugging Mouse Cursor Stuttering
+
+1. Keep this running in a terminal:
+   `sudo , libinput debug-events --show-keycodes`
+2. In another terminal, watch Niri logs:
+   `journalctl --user -u niri.service -f`
+3. When stutter occurs, check:
+  - Did libinput show any gaps or errors?
+  - Did Niri log any frame drops or warnings?
+  - Any kernel messages: `sudo dmesg | tail -20`
+
 ## Completed / Archived
 
+- [x] set up niri
+- [x] copy useful aliases from cachyos's fish config
+- [x] discord tray icon? (for gnome)
+- [x] fix zoxide, created an alias for `z` but may have not been the right way to initialize
+- [x] firefox configs
+  - [x] log into firefox account
+  - [x] configure firefox w/ sidebery
+  - [x] style userChrome.css
+  - [x] style homepage with userContent.css
+  - [x] set kagi as search engine in firefox
 - [x] git init NixOS configuration as-is
 - [x] get claude-code installed
 - [x] convert configuration to using flakes

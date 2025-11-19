@@ -67,6 +67,7 @@ in {
       "helix".source = "${dotfiles}/helix";
       "hypr".source = "${dotfiles}/hypr";
       "niri".source = "${dotfiles}/niri";
+      "noctalia".source = "${dotfiles}/noctalia";
     };
   };
 
