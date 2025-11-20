@@ -133,6 +133,7 @@
     bluez
     bluez-tools
     alsa-utils
+    playerctl
 
     # Polkit authentication agent
     polkit_gnome
