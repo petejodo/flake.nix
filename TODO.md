@@ -33,25 +33,31 @@
 - [ ] use app switcher next niri release instead of just focusing previous window
 - [ ] setup mozilla vpn but consider just using mulvad directly
 - Noctalia issues / config
-  - [ ] Track configuration in `~/.flake`
+  - [x] Track configuration in `~/.flake`
   - [x] Audio tray icon doesn't work correctly when on my sony headphones
   - [x] Widget that opens when clicking the date/time tray icon still displaying 24 hour clock
     - may be fixed already
-  - [ ] Remove config for overview when mouse goes to top-left corner
   - [ ] Screen recording not working, requires a specific xdg- package, noctalia docs mention it
   - [x] Need to set up wallpaper
+  - [ ] decide whether to switch to noctalia's lock screen or keep using hyprlock
+  - [ ] add calendar events support, see noctalia docs
 - [ ] collect a shortcut cheatsheet
   - include gmail shortcuts
 - [ ] configure a way in helix to delete/yank multiple lines and then paste as a single block
   - see https://github.com/helix-editor/helix/discussions/8601
+- [ ] determine a way to see keyboard and mouse battery levels
+- [x] keyboard media keys not working
 
 ## Keyboard Shortcuts
 
 - [x] Mod + Tab - go to previous focused window
 - [ ] Ctrl + Tab - go to previous focused window of the same application
 - [ ] ??? - dismiss notification
+- [x] Mod + Space - Application Launcher
 
 ## Debugging Mouse Cursor Stuttering
+
+Solution (still proving): Unplug and plug it back in
 
 1. Keep this running in a terminal:
    `sudo , libinput debug-events --show-keycodes`
