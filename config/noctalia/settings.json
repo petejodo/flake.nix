@@ -22,7 +22,7 @@
         "volumeStep": 5
     },
     "bar": {
-        "backgroundOpacity": 1,
+        "backgroundOpacity": 0,
         "density": "comfortable",
         "exclusive": true,
         "floating": false,
@@ -36,29 +36,20 @@
         "widgets": {
             "center": [
                 {
-                    "characterCount": 2,
-                    "hideUnoccupied": false,
-                    "id": "Workspace",
-                    "labelMode": "index"
+                    "customFont": "",
+                    "formatHorizontal": "ddd, MMM d   h:mm AP",
+                    "formatVertical": "HH mm - dd MM",
+                    "id": "Clock",
+                    "useCustomFont": false,
+                    "usePrimaryColor": false
                 }
             ],
             "left": [
                 {
-                    "colorizeDistroLogo": false,
-                    "customIconPath": "",
-                    "icon": "noctalia",
-                    "id": "ControlCenter",
-                    "useDistroLogo": false
-                },
-                {
-                    "id": "SystemMonitor",
-                    "showCpuTemp": true,
-                    "showCpuUsage": true,
-                    "showDiskUsage": false,
-                    "showMemoryAsPercent": false,
-                    "showMemoryUsage": true,
-                    "showNetworkStats": false,
-                    "usePrimaryColor": false
+                    "characterCount": 2,
+                    "hideUnoccupied": false,
+                    "id": "Workspace",
+                    "labelMode": "index"
                 },
                 {
                     "colorizeIcons": false,
@@ -68,7 +59,9 @@
                     "scrollingMode": "hover",
                     "showIcon": true,
                     "useFixedWidth": false
-                },
+                }
+            ],
+            "right": [
                 {
                     "hideMode": "hidden",
                     "hideWhenIdle": false,
@@ -79,9 +72,7 @@
                     "showVisualizer": false,
                     "useFixedWidth": false,
                     "visualizerType": "linear"
-                }
-            ],
-            "right": [
+                },
                 {
                     "id": "ScreenRecorder"
                 },
@@ -96,21 +87,30 @@
                     "id": "Tray"
                 },
                 {
+                    "displayMode": "onhover",
+                    "id": "Volume"
+                },
+                {
                     "hideWhenZero": true,
                     "id": "NotificationHistory",
                     "showUnreadBadge": true
                 },
                 {
-                    "displayMode": "onhover",
-                    "id": "Volume"
+                    "id": "SystemMonitor",
+                    "showCpuTemp": true,
+                    "showCpuUsage": true,
+                    "showDiskUsage": false,
+                    "showMemoryAsPercent": false,
+                    "showMemoryUsage": true,
+                    "showNetworkStats": false,
+                    "usePrimaryColor": false
                 },
                 {
-                    "customFont": "",
-                    "formatHorizontal": "MMM dd, h:mm AP",
-                    "formatVertical": "HH mm - dd MM",
-                    "id": "Clock",
-                    "useCustomFont": false,
-                    "usePrimaryColor": true
+                    "colorizeDistroLogo": true,
+                    "customIconPath": "",
+                    "icon": "",
+                    "id": "ControlCenter",
+                    "useDistroLogo": true
                 }
             ]
         }
@@ -326,7 +326,7 @@
             {
                 "directory": "/home/peter/Pictures/Wallpapers",
                 "name": "HDMI-A-2",
-                "wallpaper": "/home/peter/Pictures/Wallpapers/3-ristretto.jpg"
+                "wallpaper": "/home/peter/Pictures/Wallpapers/Ancient Giant.jpg"
             }
         ],
         "overviewEnabled": false,
