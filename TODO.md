@@ -37,7 +37,7 @@
   - [x] Audio tray icon doesn't work correctly when on my sony headphones
   - [x] Widget that opens when clicking the date/time tray icon still displaying 24 hour clock
     - may be fixed already
-  - [ ] Screen recording not working, requires a specific xdg- package, noctalia docs mention it
+  - [x] Screen recording not working, issue involved doing something with the intel integrated graphics stuff
   - [x] Need to set up wallpaper
   - [x] decide whether to switch to noctalia's lock screen or keep using hyprlock
   - [ ] add calendar events support, see noctalia docs

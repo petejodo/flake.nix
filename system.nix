@@ -124,6 +124,7 @@
 
     # Wayland utilities
     xwayland-satellite
+    gpu-screen-recorder
 
     # Sound / Bluetooth related
     bluez
