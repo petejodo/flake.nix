@@ -47,6 +47,8 @@
   - see https://github.com/helix-editor/helix/discussions/8601
 - [ ] determine a way to see keyboard and mouse battery levels
 - [x] keyboard media keys not working
+- [ ] does niri have a shortcut to move the workspace but keeping focus on the existing window
+  - e.g. a window on the right side of the screen would move to the left side but still be focused
 
 ## Keyboard Shortcuts
 

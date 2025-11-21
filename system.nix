@@ -71,6 +71,9 @@
   systemd.services."getty@tty1".enable = false;
   systemd.services."autovt@tty1".enable = false;
 
+  # See https://github.com/YaLTeR/niri/issues/2830#issuecomment-3548238228
+  systemd.user.services.orca.enable = false;
+
   # Printing
   services.printing.enable = true;
 
