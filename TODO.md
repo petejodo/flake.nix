@@ -39,7 +39,7 @@
     - may be fixed already
   - [ ] Screen recording not working, requires a specific xdg- package, noctalia docs mention it
   - [x] Need to set up wallpaper
-  - [ ] decide whether to switch to noctalia's lock screen or keep using hyprlock
+  - [x] decide whether to switch to noctalia's lock screen or keep using hyprlock
   - [ ] add calendar events support, see noctalia docs
 - [ ] collect a shortcut cheatsheet
   - include gmail shortcuts

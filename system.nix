@@ -108,10 +108,6 @@
     fish.enable = true;
   };
 
-  # Required for hyprlock
-  # TODO move hyprlock package from home.nix to systemPackages?
-  security.pam.services.hyprlock = {};
-
   # Nix settings
   nixpkgs.config.allowUnfree = true;
   nix.settings.experimental-features = [ "nix-command" "flakes" ];

@@ -35,9 +35,6 @@ in {
       starship # shell prompt
       zoxide # `cd` replacement
 
-      # Wayland utilities
-      hyprlock # screen locker
-
       # Languages
       beamPackages.erlang
       beamPackages.elixir
@@ -65,7 +62,6 @@ in {
       "fish".source = "${dotfiles}/fish";
       "ghostty".source = "${dotfiles}/ghostty";
       "helix".source = "${dotfiles}/helix";
-      "hypr".source = "${dotfiles}/hypr";
       "niri".source = "${dotfiles}/niri";
       "noctalia".source = "${dotfiles}/noctalia";
     };
@@ -97,8 +93,7 @@ in {
   };
 
   systemd.user.services.swayidle = let
-    hyprlock = "${pkgs.hyprlock}/bin/hyprlock";
-    lock = "pidof ${hyprlock} || ${hyprlock}";
+    lock = "noctalia-shell ipc call lockScreen lock";
     display = status: "${pkgs.niri}/bin/niri msg action power-${status}-monitors";
     swayidle = "${pkgs.swayidle}/bin/swayidle";
   in {
