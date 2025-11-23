@@ -112,6 +112,11 @@
     gamemode.enable = true;
 
     fish.enable = true;
+
+    direnv = {
+      enable = true;
+      nix-direnv.enable = true;
+    };
   };
 
   # Nix settings
