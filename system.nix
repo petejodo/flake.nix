@@ -57,7 +57,7 @@
   # User configuration
   users.users.${username} = {
     isNormalUser = true;
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "networkmanager" "wheel" "docker" ];
   };
   users.defaultUserShell = pkgs.fish;
   environment.enableAllTerminfo = true;
@@ -73,6 +73,9 @@
 
   # See https://github.com/YaLTeR/niri/issues/2830#issuecomment-3548238228
   systemd.user.services.orca.enable = false;
+
+  # Docker
+  virtualisation.docker.enable = true;
 
   # Printing
   services.printing.enable = true;
