@@ -118,6 +118,7 @@
   # System packages
   environment.systemPackages = with pkgs; [
     git
+    git-lfs
     claude-code
     ghostty
     adwaita-icon-theme
