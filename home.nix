@@ -67,13 +67,6 @@ in {
     };
   };
 
-  dconf.settings = {
-    "org/gnome/desktop/peripherals/keyboard" = {
-      delay = 250;
-      repeat-interval = 25;
-    };
-  };
-
   systemd.user.services.polkit-gnome-authentication-agent-1 = {
     Unit = {
       Description = "Polkit GNOME authentication agent";
