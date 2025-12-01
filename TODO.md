@@ -134,3 +134,5 @@ Solution (still proving): Unplug and plug it back in
   - [x] xdg-desktop-portal-gtk (and -gnome)
   - [x] polkit_gnome
     - [x] test via `systemctl --user status polkit-gnome-authentication-agent-1`
+- [x] latest update caused `contour` the terminal emulator to be built but I'm unsure why
+  - because I had environment.enableAllTerminfo

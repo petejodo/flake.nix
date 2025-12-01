@@ -45,21 +45,6 @@
           nix-index-database.nixosModules.nix-index
           home-manager.nixosModules.home-manager
 
-          # Fix for termbench-pro build failure (https://github.com/NixOS/nixpkgs/issues/465358)
-          # This applies the fix from https://github.com/NixOS/nixpkgs/pull/465400
-          {
-            nixpkgs.overlays = [
-              (final: prev: {
-                termbench-pro = prev.termbench-pro.overrideAttrs (oldAttrs: {
-                  buildInputs = [
-                    final.fmt
-                    (final.glaze.override { enableSSL = false; })
-                  ] ++ (builtins.filter (pkg: pkg != prev.fmt && pkg != prev.glaze) (oldAttrs.buildInputs or []));
-                });
-              })
-            ];
-          }
-
           # Include home-manager configuration.
           {
             home-manager = {

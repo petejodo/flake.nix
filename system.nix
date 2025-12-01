@@ -60,7 +60,6 @@
     extraGroups = [ "networkmanager" "wheel" "docker" ];
   };
   users.defaultUserShell = pkgs.fish;
-  environment.enableAllTerminfo = true;
   environment.shells = [pkgs.fish pkgs.bash];
 
   # Enable automatic login
@@ -133,6 +132,9 @@
     helix
     bitwarden-desktop
     bitwarden-cli # not sure whether I'd use the CLI or desktop app more
+
+    # Nix utilities
+    nix-tree
 
     # Wayland utilities
     xwayland-satellite
