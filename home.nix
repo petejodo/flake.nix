@@ -35,6 +35,9 @@ in {
       starship # shell prompt
       zoxide # `cd` replacement
 
+      # Editors
+      zed-editor
+      
       # Languages
       beamPackages.erlang
       beamPackages.elixir
