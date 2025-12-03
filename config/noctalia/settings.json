@@ -3,7 +3,7 @@
         "customLaunchPrefix": "",
         "customLaunchPrefixEnabled": false,
         "enableClipPreview": true,
-        "enableClipboardHistory": false,
+        "enableClipboardHistory": true,
         "pinnedExecs": [
         ],
         "position": "center",
@@ -114,7 +114,9 @@
                 },
                 {
                     "colorizeDistroLogo": true,
+                    "colorizeSystemIcon": "none",
                     "customIconPath": "",
+                    "enableColorization": false,
                     "icon": "",
                     "id": "ControlCenter",
                     "useDistroLogo": true
@@ -131,11 +133,11 @@
         "cards": [
             {
                 "enabled": true,
-                "id": "banner-card"
+                "id": "calendar-header-card"
             },
             {
                 "enabled": true,
-                "id": "calendar-card"
+                "id": "calendar-month-card"
             },
             {
                 "enabled": true,
@@ -155,10 +157,10 @@
         "generateTemplatesForPredefined": true,
         "manualSunrise": "06:30",
         "manualSunset": "18:30",
-        "matugenSchemeType": "scheme-fruit-salad",
+        "matugenSchemeType": "scheme-fidelity",
         "predefinedScheme": "Kanagawa",
         "schedulingMode": "off",
-        "useWallpaperColors": false
+        "useWallpaperColors": true
     },
     "controlCenter": {
         "cards": [
@@ -228,18 +230,19 @@
             "firefox",
             "com.mitchellh.ghostty"
         ],
-        "radiusRatio": 0.1,
         "size": 1.5
     },
     "general": {
         "allowPanelsOnScreenWithoutBar": true,
-        "animationDisabled": false,
+        "animationDisabled": true,
         "animationSpeed": 1.5000000000000002,
         "avatarImage": "/home/peter/.face",
+        "boxRadiusRatio": 1,
         "compactLockScreen": false,
-        "dimmerOpacity": 0.8,
+        "dimmerOpacity": 0,
         "enableShadows": true,
         "forceBlackScreenCorners": false,
+        "iRadiusRatio": 1,
         "language": "",
         "lockOnSuspend": true,
         "radiusRatio": 1,
@@ -356,7 +359,7 @@
         ],
         "showHeader": true
     },
-    "settingsVersion": 25,
+    "settingsVersion": 26,
     "systemMonitor": {
         "cpuCriticalThreshold": 90,
         "cpuPollingInterval": 3000,
