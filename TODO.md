@@ -21,7 +21,7 @@
   - helix
   - xterm
   - web (gnome default browser) - there's nix settings that allow for doing this
-- [ ] something is adding the following packages that should be removed (can be seen in environment.systemPackages in repl)
+- [ ] something is adding the following packages that should be removed (can be seen in environment.systemPackages in repl).
   - alacritty
   - foot
 - [ ] unlock keyring on login?
@@ -29,8 +29,9 @@
 - [ ] setup firewall
   - skipping since this isn't laptop but will have to revisit when adding my laptop to this configuration
 - [ ] was getting an issue when swayidle was added as a package where it would crash but works without it. Unsure why?
-- [ ] kind of long boot time from pressing enter in gdm to seeing niri, black screen for a bit 
-- [ ] use app switcher next niri release instead of just focusing previous window
+- [x] kind of long boot time from pressing enter in gdm to seeing niri, black screen for a bit 
+  - maybe fixed with latest niri version?
+- [x] use app switcher next niri release instead of just focusing previous window
 - [ ] setup mozilla vpn but consider just using mulvad directly
 - Noctalia issues / config
   - [x] Track configuration in `~/.flake`
@@ -40,7 +41,7 @@
   - [x] Screen recording not working, issue involved doing something with the intel integrated graphics stuff
   - [x] Need to set up wallpaper
   - [x] decide whether to switch to noctalia's lock screen or keep using hyprlock
-  - [ ] add calendar events support, see noctalia docs
+  - [ ] add calendar events support, see noctalia docs https://docs.noctalia.dev/getting-started/nixos/#calendar-events-support
 - [ ] collect a shortcut cheatsheet
   - include gmail shortcuts
 - [ ] configure a way in helix to delete/yank multiple lines and then paste as a single block
@@ -48,12 +49,12 @@
 - [ ] determine a way to see keyboard and mouse battery levels
 - [x] keyboard media keys not working
 - [ ] does niri have a shortcut to move the workspace but keeping focus on the existing window
-  - e.g. a window on the right side of the screen would move to the left side but still be focused
+  - e.g. a window on the right side of the screen would move to the left side but still be focused like Mod+C but move window all the way to left
 
 ## Keyboard Shortcuts
 
 - [x] Mod + Tab - go to previous focused window
-- [ ] Ctrl + Tab - go to previous focused window of the same application
+- [ ] ~~Ctrl + Tab - go to previous focused window of the same application~~
 - [ ] ??? - dismiss notification
 - [x] Mod + Space - Application Launcher
 
