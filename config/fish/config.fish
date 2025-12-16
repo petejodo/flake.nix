@@ -23,6 +23,11 @@ function backup --argument filename
     cp $filename $filename.bak
 end
 
+if test -d ~/.local/state
+    # Enable history in erlang/elixir interpreters
+    set -gx ERL_AFLAGS "-kernel shell_history enabled -kernel shell_history_path '\"~/.local/state/erlang\"'"
+end
+
 # Useful aliases
 
 ## Shortcut for git
