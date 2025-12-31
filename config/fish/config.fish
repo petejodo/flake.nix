@@ -25,7 +25,7 @@ end
 
 if test -d ~/.local/state
     # Enable history in erlang/elixir interpreters
-    set -gx ERL_AFLAGS "-kernel shell_history enabled -kernel shell_history_path '\"~/.local/state/erlang\"'"
+    set -gx ERL_AFLAGS "-kernel shell_history enabled -kernel shell_history_path '\"$HOME/.local/state/erlang\"'"
 end
 
 # Useful aliases
