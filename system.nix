@@ -76,6 +76,13 @@
   # Docker
   virtualisation.docker.enable = true;
 
+  # Tailscale
+  services.tailscale = {
+    enable = true;
+    useRoutingFeatures = "client";
+    extraUpFlags = [ "--ssh" ];
+  };
+
   # Printing
   services.printing.enable = true;
 

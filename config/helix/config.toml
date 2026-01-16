@@ -1,10 +1,35 @@
-theme = "base16_transparent"
+theme = "onedark"
 
 [editor]
 line-number = "relative"
 bufferline = "multiple"
+color-modes = true
+end-of-line-diagnostics = "hint"
 
 [editor.cursor-shape]
 normal = "block"
 insert = "bar"
 select = "underline"
+
+[editor.lsp]
+# auto-signature-help = false
+display-messages = true
+display-inlay-hints = true
+
+[editor.statusline]
+left = ["mode", "spinner", "file-name"]
+center = ["version-control"]
+right = [
+  "selections",
+  "position",
+  "file-encoding",
+  "file-line-ending",
+  "file-type"
+]
+separator = "|"
+mode.normal = "NORMAL"
+mode.insert = "INSERT"
+mode.select = "SELECT"
+
+[editor.inline-diagnostics]
+cursor-line = "warning"
