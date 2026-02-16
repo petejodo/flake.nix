@@ -12,7 +12,7 @@ insert = "bar"
 select = "underline"
 
 [editor.lsp]
-# auto-signature-help = false
+auto-signature-help = false
 display-messages = true
 display-inlay-hints = true
 
