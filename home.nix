@@ -39,6 +39,7 @@ in {
       zed-editor
       
       # Languages
+      bun
       beamPackages.erlang
       beamPackages.elixir
       beamPackages.elixir-ls
