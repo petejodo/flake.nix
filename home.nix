@@ -88,30 +88,4 @@ in {
       TimeoutStopSec = 10;
     };
   };
-
-  systemd.user.services.swayidle = let
-    lock = "noctalia-shell ipc call lockScreen lock";
-    display = status: "${pkgs.niri}/bin/niri msg action power-${status}-monitors";
-    swayidle = "${pkgs.swayidle}/bin/swayidle";
-  in {
-    Unit = {
-      Description = "Idle manager for Wayland";
-      Documentation = "man:swayidle(1)";
-      BindsTo = "niri.service";
-      After = "niri.service";
-    };
-    Install = {
-      WantedBy = [ "niri.service" ];
-    };
-    Service = {
-      Type = "simple";
-      Restart = "always";
-      ExecStart = "${swayidle} " +
-        "timeout 300 '${lock}' " +
-        "timeout 330 '${display "off"}' " +
-        "resume '${display "on"}' " +
-        "timeout 600 '${pkgs.systemd}/bin/systemctl suspend' " +
-        "before-sleep '${lock}'";
-    };
-  };
 }
