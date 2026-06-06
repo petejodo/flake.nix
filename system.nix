@@ -137,7 +137,7 @@
     ghostty
     adwaita-icon-theme
     helix
-    bitwarden-desktop
+    # bitwarden-desktop # depends on insecure electron version
     bitwarden-cli # not sure whether I'd use the CLI or desktop app more
 
     # Nix utilities
