@@ -197,6 +197,9 @@
                     "icon": "",
                     "id": "ControlCenter",
                     "useDistroLogo": true
+                },
+                {
+                    "id": "plugin:keybind-cheatsheet"
                 }
             ]
         }
