@@ -37,6 +37,9 @@
   # unlocking gnome keyring supposedly doesn't work with autologin unless pw is blank
   security.pam.services.login.enableGnomeKeyring = true;
 
+  # PAM service for noctalia's built-in lock screen
+  security.pam.services.noctalia-shell = {};
+
   # XDG Desktop Portal configuration for Niri + GNOME
   xdg.portal = {
     enable = true;
@@ -158,8 +161,6 @@
     # Polkit authentication agent
     polkit_gnome
 
-    # Shell for Niri
-    inputs.noctalia.packages.${pkgs.stdenv.hostPlatform.system}.default
   ];
 
   # Remove default GNOME applications

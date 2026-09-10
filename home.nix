@@ -1,7 +1,9 @@
 {
   config,
+  inputs,
   lib,
   pkgs,
+  system,
   stateVersion,
   hostname,
   username,
@@ -15,6 +17,19 @@
 in {
   programs = {
     home-manager.enable = true;
+
+    noctalia = {
+      enable = true;
+      package = inputs.noctalia.packages.${system}.default;
+      # Don't validate config at build time — config is managed via live symlinks
+      checkConfig = false;
+      systemd.enable = true;
+    };
+  };
+
+  # Point noctalia's lock screen at the dedicated PAM service (see system.nix)
+  systemd.user.services.noctalia-shell = {
+    Service.Environment = "NOCTALIA_PAM_SERVICE=noctalia-shell";
   };
 
   home = {

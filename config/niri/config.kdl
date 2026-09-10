@@ -265,7 +265,7 @@ layout {
 
 // This line starts waybar, a commonly used bar for Wayland compositors.
 // spawn-at-startup "waybar"
-spawn-at-startup "noctalia-shell"
+// noctalia is started via its systemd user service (programs.noctalia.systemd.enable)
 
 // Start xwayland-satellite for X11 application support
 spawn-at-startup "xwayland-satellite"
@@ -626,3 +626,5 @@ binds {
     // moving the mouse or pressing any other key.
     Mod+Shift+P { power-off-monitors; }
 }
+
+include "noctalia.kdl"

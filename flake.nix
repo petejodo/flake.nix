@@ -26,7 +26,7 @@
     };
   };
 
-  outputs = { self, nixpkgs, home-manager, nix-index-database, ... } @ inputs:
+  outputs = { self, nixpkgs, home-manager, nix-index-database, noctalia, ... } @ inputs:
     let
       stateVersion = "25.05";
       username = "peter";
@@ -51,7 +51,12 @@
               useGlobalPkgs = true;
               useUserPackages = true;
               extraSpecialArgs = {inherit inputs stateVersion hostname username system;};
-              users.${username} = import ./home.nix;
+              users.${username} = {
+                imports = [
+                  noctalia.homeModules.default
+                  (import ./home.nix)
+                ];
+              };
             };
           }
         ];
