@@ -41,18 +41,20 @@ in {
       # Tools / Utilities
       bat # `cat` replacement
       btop # `top` replacement
+      codex # OpenAI Codex CLI coding agent
       eza # `ls` replacement
       fastfetch # terminal intro screen
-      fd # `find` replacement 
+      fd # `find` replacement
       fzf # fuzzy finder
       localsend # send files over your local network
       ripgrep # `grep` replacement
       starship # shell prompt
       zoxide # `cd` replacement
 
-      # Editors
+      # Apps
+      inkscape
       zed-editor
-      
+
       # Languages
       bun
       beamPackages.erlang
